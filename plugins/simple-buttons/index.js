@@ -2,78 +2,80 @@ const _ = require('lodash')
 const Color = require('color')
 const defaultConfig = require('tailwindcss/defaultConfig')()
 
-const defaultOptions = {
-  borderRadius: '.25rem',
-  fontWeight: '600',
-  lineHeight: '1.25',
-  fontSize: '1rem',
-  padding: '.5rem 1rem',
-  colors: {
-    white: {
-      background: defaultConfig.colors['white'],
-      text: defaultConfig.colors['black'],
+function defaultOptions() {
+  return {
+    borderRadius: '.25rem',
+    fontWeight: '600',
+    lineHeight: '1.25',
+    fontSize: '1rem',
+    padding: '.5rem 1rem',
+    colors: {
+      white: {
+        background: defaultConfig.colors['white'],
+        text: defaultConfig.colors['black'],
+      },
+      black: {
+        background: defaultConfig.colors['black'],
+        text: defaultConfig.colors['white'],
+      },
+      grey: {
+        background: defaultConfig.colors['grey'],
+        text: defaultConfig.colors['black'],
+      },
+      red: {
+        background: defaultConfig.colors['red'],
+        text: defaultConfig.colors['white'],
+      },
+      orange: {
+        background: defaultConfig.colors['orange'],
+        text: defaultConfig.colors['white'],
+      },
+      yellow: {
+        background: defaultConfig.colors['yellow'],
+        text: defaultConfig.colors['yellow-darkest'],
+      },
+      green: {
+        background: defaultConfig.colors['green'],
+        text: defaultConfig.colors['white'],
+      },
+      teal: {
+        background: defaultConfig.colors['teal'],
+        text: defaultConfig.colors['white'],
+      },
+      blue: {
+        background: defaultConfig.colors['blue'],
+        text: defaultConfig.colors['white'],
+      },
+      indigo: {
+        background: defaultConfig.colors['indigo'],
+        text: defaultConfig.colors['white'],
+      },
+      purple: {
+        background: defaultConfig.colors['purple'],
+        text: defaultConfig.colors['white'],
+      },
+      pink: {
+        background: defaultConfig.colors['pink'],
+        text: defaultConfig.colors['white'],
+      },
     },
-    black: {
-      background: defaultConfig.colors['black'],
-      text: defaultConfig.colors['white'],
-    },
-    grey: {
-      background: defaultConfig.colors['grey'],
-      text: defaultConfig.colors['black'],
-    },
-    red: {
-      background: defaultConfig.colors['red'],
-      text: defaultConfig.colors['white'],
-    },
-    orange: {
-      background: defaultConfig.colors['orange'],
-      text: defaultConfig.colors['white'],
-    },
-    yellow: {
-      background: defaultConfig.colors['yellow'],
-      text: defaultConfig.colors['yellow-darkest'],
-    },
-    green: {
-      background: defaultConfig.colors['green'],
-      text: defaultConfig.colors['white'],
-    },
-    teal: {
-      background: defaultConfig.colors['teal'],
-      text: defaultConfig.colors['white'],
-    },
-    blue: {
-      background: defaultConfig.colors['blue'],
-      text: defaultConfig.colors['white'],
-    },
-    indigo: {
-      background: defaultConfig.colors['indigo'],
-      text: defaultConfig.colors['white'],
-    },
-    purple: {
-      background: defaultConfig.colors['purple'],
-      text: defaultConfig.colors['white'],
-    },
-    pink: {
-      background: defaultConfig.colors['pink'],
-      text: defaultConfig.colors['white'],
-    },
-  },
-  sizes: {
-    sm: {
-      fontSize: '.875rem',
-      padding: '.5rem .75rem',
-    },
-    lg: {
-      fontSize: '1.25rem',
-      padding: '.75rem 1.5rem',
+    sizes: {
+      sm: {
+        fontSize: '.875rem',
+        padding: '.5rem .75rem',
+      },
+      lg: {
+        fontSize: '1.25rem',
+        padding: '.75rem 1.5rem',
+      }
     }
   }
 }
 
 module.exports = function (options) {
   options = _.isFunction(options)
-   ? options(defaultOptions)
-   : _.defaults(options, defaultOptions)
+   ? options(defaultOptions())
+   : _.defaults(options, defaultOptions())
 
   return function ({ addComponents, e }) {
     addComponents([

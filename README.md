@@ -49,7 +49,7 @@ In `plugins/simple-buttons/index.js` you'll find an example of a plugin that add
 
 ![](https://user-images.githubusercontent.com/4323180/37477287-b367cf88-284d-11e8-823b-f793c3ba1119.png)
 
-This plugin exposes quite a number of configuration options *(all optional)*, which can be passed to the plugin as an object:
+This plugin exposes quite a number of configuration options which can be passed to the plugin as an object:
 
 ```js
 module.exports = {
@@ -91,18 +91,47 @@ module.exports = {
       // You can override any of the default styles from above
       // at any given button size.
       sizes: {
+        // Class name: `.btn-sm`
         sm: {
           fontSize: '.875rem',
           padding: '.5rem .75rem',
         },
+        // Class name: `.btn-lg`
         lg: {
           fontSize: '1.25rem',
           padding: '.75rem 1.5rem',
           borderRadius: '.5rem',
         }
       }
+
     }),
   ],
 }
 ```
 
+Configuration is entirely optional; the plugin will use sane defaults based on Tailwind's default configuration if you don't provide any of your own overrides.
+
+If you want to extend the plugin's default configuration instead of overriding it entirely, you can pass a function which accepts the default configuration, modifies it, and returns a new configuration object:
+
+```js
+module.exports = {
+  // ...
+
+  plugins: [
+    // ...
+    require('./plugins/simple-buttons')(function (options) {
+      options.sizes = Object.assign(options.sizes, {
+        xl: {
+          fontSize: '1.5rem',
+          padding: '1rem 2rem',
+          borderRadius: '.75rem',
+        }
+      })
+
+      return options  
+    }),
+  ],
+}
+```
+
+Again, the sky is the limit in terms of the API a plugin exposes for configuration. You can do anything you want!
