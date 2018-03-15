@@ -26,6 +26,8 @@ Load up `./index.html` in your browser and you're off to the races!
 
 In `plugins/object-fit/index.js` you'll find an example of a plugin that adds a set of simple, non-configurable utility classes for the `object-fit` property.
 
+![](https://user-images.githubusercontent.com/4323180/37477273-a16ac9fc-284d-11e8-9ec6-da819f66871e.png)
+
 The only option it exposes are the variants you'd like to generate (`responsive`, `hover`, `focus`, etc.), which you pass to the plugin as a simple array:
 
 ```js
@@ -41,4 +43,4 @@ This is just about the simplest type of plugin you could make.
 
 In `plugins/simple-buttons/index.js` you'll find an example of a plugin that adds new component classes.
 
-![](https://user-images.githubusercontent.com/4323180/37471725-d90672a6-2840-11e8-8b15-924e62c90e1d.png)
+![](https://user-images.githubusercontent.com/4323180/37477287-b367cf88-284d-11e8-823b-f793c3ba1119.png)
