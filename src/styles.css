@@ -2,4 +2,11 @@
 
 @tailwind components;
 
+.grid > *:nth-child(odd) {
+    @apply .bg-grey-light;
+}
+.grid > *:nth-child(even) {
+    @apply .bg-grey;
+}
+
 @tailwind utilities;

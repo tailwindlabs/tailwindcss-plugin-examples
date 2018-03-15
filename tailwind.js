@@ -902,6 +902,9 @@ module.exports = {
     require('tailwindcss/plugins/container')(),
     require('./plugins/object-fit')(['responsive']),
     require('./plugins/simple-buttons')(),
+    require('./plugins/css-grid')({
+      columns: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    }),
   ],
 
 
