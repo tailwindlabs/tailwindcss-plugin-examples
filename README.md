@@ -2,7 +2,7 @@
 
 To get started, clone the project and install the dependencies:
 
-```
+```sh
 # Using npm
 npm install
 
@@ -12,7 +12,7 @@ yarn
 
 After that, you can process the CSS by running:
 
-```
+```sh
 # Using npm
 npm run build
 
