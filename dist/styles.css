@@ -4803,6 +4803,30 @@ button,
   z-index: auto;
 }
 
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-fill {
+  object-fit: fill;
+}
+
+.object-none {
+  object-fit: none;
+}
+
+.object-scale {
+  object-fit: scale-down;
+}
+
+.grid {
+  display: grid;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
@@ -8693,6 +8717,26 @@ button,
 
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:object-contain {
+    object-fit: contain;
+  }
+
+  .sm\:object-cover {
+    object-fit: cover;
+  }
+
+  .sm\:object-fill {
+    object-fit: fill;
+  }
+
+  .sm\:object-none {
+    object-fit: none;
+  }
+
+  .sm\:object-scale {
+    object-fit: scale-down;
   }
 }
 
@@ -12587,6 +12631,26 @@ button,
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:object-contain {
+    object-fit: contain;
+  }
+
+  .md\:object-cover {
+    object-fit: cover;
+  }
+
+  .md\:object-fill {
+    object-fit: fill;
+  }
+
+  .md\:object-none {
+    object-fit: none;
+  }
+
+  .md\:object-scale {
+    object-fit: scale-down;
+  }
 }
 
 @media (min-width: 992px) {
@@ -16480,6 +16544,26 @@ button,
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:object-contain {
+    object-fit: contain;
+  }
+
+  .lg\:object-cover {
+    object-fit: cover;
+  }
+
+  .lg\:object-fill {
+    object-fit: fill;
+  }
+
+  .lg\:object-none {
+    object-fit: none;
+  }
+
+  .lg\:object-scale {
+    object-fit: scale-down;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -20372,5 +20456,25 @@ button,
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:object-contain {
+    object-fit: contain;
+  }
+
+  .xl\:object-cover {
+    object-fit: cover;
+  }
+
+  .xl\:object-fill {
+    object-fit: fill;
+  }
+
+  .xl\:object-none {
+    object-fit: none;
+  }
+
+  .xl\:object-scale {
+    object-fit: scale-down;
   }
 }

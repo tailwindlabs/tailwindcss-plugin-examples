@@ -900,6 +900,7 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')(),
+    require('./plugins/object-fit')(['responsive']),
     require('./plugins/simple-buttons')(),
   ],
 
