@@ -900,6 +900,7 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')(),
+    require('./plugins/simple-buttons')(),
   ],
 
 
