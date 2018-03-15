@@ -24,6 +24,8 @@ Load up `./index.html` in your browser and you're off to the races!
 
 ## Object-Fit Utilities
 
+[View the source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/object-fit/index.js)
+
 In `plugins/object-fit/index.js` you'll find an example of a plugin that adds a set of simple, non-configurable utility classes for the `object-fit` property.
 
 ![](https://user-images.githubusercontent.com/4323180/37477273-a16ac9fc-284d-11e8-9ec6-da819f66871e.png)
@@ -44,6 +46,8 @@ module.exports = {
 This is just about the simplest type of plugin you could make.
 
 ## Simple Buttons
+
+[View the source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/simple-buttons/index.js)
 
 In `plugins/simple-buttons/index.js` you'll find an example of a plugin that adds new button component classes.
 
