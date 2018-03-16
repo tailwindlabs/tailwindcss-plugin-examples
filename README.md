@@ -184,4 +184,3 @@ The plugin generates the following sets of classes:
 - `.col-start-{line}` and `.col-end-{line}`, for specifying a column's start and end points explicitly (useful for reordering columns or leaving gaps)
 
 It's not really practical to expose all of the power of CSS Grid through utilities, but this plugin is a good example of using CSS Grid to replace a column-only float or Flexbox grid.
-tailwind
