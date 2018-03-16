@@ -24,7 +24,7 @@ Load up `./index.html` in your browser and you're off to the races!
 
 ## Object-Fit Utilities
 
-[View the source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/object-fit/index.js)
+[View demo](https://tailwindcss.github.io/plugin-examples/#object-fit) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/object-fit/index.js)
 
 In `plugins/object-fit/index.js` you'll find an example of a plugin that adds a set of simple, non-configurable utility classes for the `object-fit` property.
 
@@ -47,7 +47,7 @@ This is just about the simplest type of plugin you could make.
 
 ## Simple Buttons
 
-[View the source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/simple-buttons/index.js)
+[View demo](https://tailwindcss.github.io/plugin-examples/#simple-buttons) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/simple-buttons/index.js)
 
 In `plugins/simple-buttons/index.js` you'll find an example of a plugin that adds new button component classes.
 
@@ -142,7 +142,7 @@ Again, the sky is the limit in terms of the API a plugin exposes for configurati
 
 ## CSS Grid Utilities
 
-[View the source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/css-grid/index.js)
+[View demo](https://tailwindcss.github.io/plugin-examples/#css-grid) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/css-grid/index.js)
 
 In `plugins/css-grid/index.js` you'll find an example of a plugin that adds new utilities for using [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
 
@@ -184,3 +184,4 @@ The plugin generates the following sets of classes:
 - `.col-start-{line}` and `.col-end-{line}`, for specifying a column's start and end points explicitly (useful for reordering columns or leaving gaps)
 
 It's not really practical to expose all of the power of CSS Grid through utilities, but this plugin is a good example of using CSS Grid to replace a column-only float or Flexbox grid.
+tailwind
