@@ -4839,6 +4839,18 @@ button,
   grid-auto-flow: dense;
 }
 
+.grid-gap-0 {
+  grid-gap: 0;
+}
+
+.grid-gap-4 {
+  grid-gap: 1rem;
+}
+
+.grid-gap-8 {
+  grid-gap: 2rem;
+}
+
 .grid-columns-1 {
   grid-template-columns: repeat(1, 1fr);
 }
@@ -8957,6 +8969,18 @@ button,
 
   .sm\:grid-dense {
     grid-auto-flow: dense;
+  }
+
+  .sm\:grid-gap-0 {
+    grid-gap: 0;
+  }
+
+  .sm\:grid-gap-4 {
+    grid-gap: 1rem;
+  }
+
+  .sm\:grid-gap-8 {
+    grid-gap: 2rem;
   }
 
   .sm\:grid-columns-1 {
@@ -13080,6 +13104,18 @@ button,
     grid-auto-flow: dense;
   }
 
+  .md\:grid-gap-0 {
+    grid-gap: 0;
+  }
+
+  .md\:grid-gap-4 {
+    grid-gap: 1rem;
+  }
+
+  .md\:grid-gap-8 {
+    grid-gap: 2rem;
+  }
+
   .md\:grid-columns-1 {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -17201,6 +17237,18 @@ button,
     grid-auto-flow: dense;
   }
 
+  .lg\:grid-gap-0 {
+    grid-gap: 0;
+  }
+
+  .lg\:grid-gap-4 {
+    grid-gap: 1rem;
+  }
+
+  .lg\:grid-gap-8 {
+    grid-gap: 2rem;
+  }
+
   .lg\:grid-columns-1 {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -21320,6 +21368,18 @@ button,
 
   .xl\:grid-dense {
     grid-auto-flow: dense;
+  }
+
+  .xl\:grid-gap-0 {
+    grid-gap: 0;
+  }
+
+  .xl\:grid-gap-4 {
+    grid-gap: 1rem;
+  }
+
+  .xl\:grid-gap-8 {
+    grid-gap: 2rem;
   }
 
   .xl\:grid-columns-1 {

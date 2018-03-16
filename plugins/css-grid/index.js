@@ -1,27 +1,29 @@
 const _ = require('lodash')
-const defaultConfig = require('tailwindcss/defaultConfig')()
 
-module.exports = function ({ columns = _.range(1, 12), variants = ['responsive'] }) {
-  return function ({ addUtilities }) {
+module.exports = function ({ grids = _.range(1, 12), gaps = {}, variants = ['responsive']}) {
+  return function ({ e, addUtilities }) {
     addUtilities([
       { '.grid': { display: 'grid' } },
       { '.grid-dense': { gridAutoFlow: 'dense' } },
-      ...columns.map(n => ({
-        [`.grid-columns-${n}`]: {
-          gridTemplateColumns: `repeat(${n}, 1fr)`,
+      ..._.map(gaps, (size, name) => ({
+        [`.grid-gap-${e(name)}`]: { gridGap: size },
+      })),
+      ...grids.map(columns => ({
+        [`.grid-columns-${columns}`]: {
+          gridTemplateColumns: `repeat(${columns}, 1fr)`,
         }
       })),
-      ..._.range(1, _.max(columns) + 1).map(n => ({
-        [`.col-span-${n}`]: {
-          gridColumnStart: `span ${n}`,
+      ..._.range(1, _.max(grids) + 1).map(span => ({
+        [`.col-span-${span}`]: {
+          gridColumnStart: `span ${span}`,
         }
       })),
-      ..._.range(1, _.max(columns) + 2).map(n => ({
-        [`.col-start-${n}`]: {
-          gridColumnStart: `${n}`,
+      ..._.range(1, _.max(grids) + 2).map(line => ({
+        [`.col-start-${line}`]: {
+          gridColumnStart: `${line}`,
         },
-        [`.col-end-${n}`]: {
-          gridColumnEnd: `${n}`,
+        [`.col-end-${line}`]: {
+          gridColumnEnd: `${line}`,
         },
       })),
     ], variants)
