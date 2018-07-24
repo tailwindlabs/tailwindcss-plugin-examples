@@ -6,7 +6,7 @@ module.exports = function ({ grids = _.range(1, 12), gaps = {}, variants = ['res
       { '.grid': { display: 'grid' } },
       { '.grid-dense': { gridAutoFlow: 'dense' } },
       ..._.map(gaps, (size, name) => ({
-        [`.grid-gap-${e(name)}`]: { gridGap: size },
+        [`.${e(`grid-gap-${name}`)}`]: { gridGap: size },
       })),
       ...grids.map(columns => ({
         [`.grid-columns-${columns}`]: {
