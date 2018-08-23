@@ -26,6 +26,11 @@ module.exports = function ({ grids = _.range(1, 12), gaps = {}, variants = ['res
           gridColumnEnd: `${line}`,
         },
       })),
+      ..._.range(1, _.max(grids) + 1).map(span => ({
+        [`.row-span-${span}`]: {
+          gridRowStart: `span ${span}`,
+        }
+      })),
     ], variants)
   }
 }
