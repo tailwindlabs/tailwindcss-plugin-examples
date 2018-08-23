@@ -9,4 +9,14 @@
     @apply .bg-grey;
 }
 
+.bg-grey-light\! {
+    @apply .bg-grey-light !important;
+}
+.bg-grey\! {
+    @apply .bg-grey !important;
+}
+.bg-grey-darkest\! {
+    @apply .bg-grey-darkest !important;
+}
+
 @tailwind utilities;

@@ -7,7 +7,7 @@
         "color": "^3.0.0",
         "cross-env": "^5.1",
         "lodash": "^4.17.5",
-        "tailwindcss": "^0.5.1"
+        "tailwindcss": "^0.6.5"
     },
     "postcss": {
         "tailwindcss": "./tailwind.js"
